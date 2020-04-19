@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "us-east-3"
+
+  region = "us-east-2"
+
 }
 
 resource "aws_key_pair" "example_kp" {
