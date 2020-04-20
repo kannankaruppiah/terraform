@@ -5,3 +5,7 @@ output "public_subnets" {
 output "VPC_KANNAN" {
   value = "${aws_vpc.main.id}"
 }
+
+output "security_group"{
+  value="${aws_security_group.test_sg.id}"
+}

@@ -13,7 +13,7 @@ resource "aws_vpc" "main" {
   enable_dns_support   = true
 
   tags = {
-    Name = "my-kannan-terraform-vpc-revised"
+    Name = "my-terraform-module-vpc"
   }
 }
 
