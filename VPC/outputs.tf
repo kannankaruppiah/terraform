@@ -9,3 +9,11 @@ output "VPC_KANNAN" {
 output "security_group"{
   value="${aws_security_group.test_sg.id}"
 }
+
+output "subnet1" {
+  value = "${element(aws_subnet.public_subnet.*.id, 1 )}"
+}
+
+output "subnet2" {
+  value = "${element(aws_subnet.public_subnet.*.id, 2 )}"
+}
